@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  bard-discord-bot:
+    build: .
+    image: bard-discord-bot
+    container_name: bard-discord-bot
+    env_file:
+      - .env
+    restart: unless-stopped
